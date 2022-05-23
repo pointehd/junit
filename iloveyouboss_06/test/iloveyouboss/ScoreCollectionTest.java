@@ -8,9 +8,12 @@
 ***/
 package iloveyouboss;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*; 
-import org.junit.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+
 
 public class ScoreCollectionTest {
    @Test
@@ -24,6 +27,6 @@ public class ScoreCollectionTest {
       int actualResult = collection.arithmeticMean();
       
       // Assert
-      assertThat(actualResult, equalTo(6));
+      Assert.assertThat(actualResult, equalTo(6));
    }
 }
